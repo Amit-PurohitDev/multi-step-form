@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Multi Step Form</title>
+</head>
+
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="form_nav">
+                <h1>Signup Form</h1>
+                <div class="nav">
+                        <div>
+                            <span>Name</span>
+                            <span class="navlink">1</span>
+                        </div>
+                        <div>
+                            <span>Contact</span>
+                            <span class="navlink">2</span>
+                        </div>
+                        <div>
+                            <span>Birth</span>
+                            <span class="navlink">3</span>
+                        </div>
+                        <div>
+                            <span>Submit</span>
+                            <span class="navlink">4</span>
+                        </div>
+                </div>
+            </div>
+            <div class="form_body">
+                <div class="form_scroll">
+                    <div class="basic_info">
+                        <h3>Basic Info:</h3>
+                        <form action="">
+                            <label for="">First Name</label>
+                            <input type="text" name="fname" id="firstName">
+                            <label for="">Last Name</label>
+                            <input type="text" name="lname" id="lastName">
+                        </form>
+                    </div>
+                    <div class="contact_info">
+                        <h3>Contact Info:</h3>
+                        <form action="">
+                            <label for="">Email Address</label>
+                            <input type="email" name="email" id="emailId">
+                            <label for="">Phone Number</label>
+                            <input type="tel" name="mobile" id="mobileNo">
+                        </form>
+                    </div>
+                    <div class="birth_info">
+                        <h3>Date Of Birth:</h3>
+                        <form action="">
+                            <label for="">Date</label>
+                            <input type="date" name="date" id="dobId">
+                            <label for="">Gender</label>
+                            <select name="gender" id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Femail</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="submit_info">
+                        <h3>Login Details:</h3>
+                        <form action="">
+                            <label for="">Username</label>
+                            <input type="text" name="username" id="userName">
+                            <label for="">Password</label>
+                            <input type="password" name="password" id="passWord">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="form_cta">
+                <button id="prev">PREVIOUS</button>
+                <button id="next">NEXT</button>
+                <button id="submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

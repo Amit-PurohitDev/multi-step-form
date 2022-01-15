@@ -1,0 +1,203 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.form_wrapper {
+  background: #16222A;
+  background: -webkit-gradient(linear, left top, right top, from(#3A6073), to(#16222A));
+  background: linear-gradient(to right, #3A6073, #16222A);
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_wrapper .form_container {
+  width: 375px;
+  background-color: #ffffff;
+  padding: 2em 0;
+  border-radius: 4px;
+}
+
+.form_wrapper .form_container .form_nav {
+  padding: 0 2em;
+}
+
+.form_wrapper .form_container .form_nav h1 {
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 0.7px;
+}
+
+.form_wrapper .form_container .form_nav .nav {
+  padding: 1em 0;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form_wrapper .form_container .form_nav .nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_wrapper .form_container .form_nav .nav div span {
+  margin-top: 10px;
+}
+
+.form_wrapper .form_container .form_nav .nav div span:last-child {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #646262;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #646262;
+  font-size: 12px;
+}
+
+.form_wrapper .form_container .form_nav .nav div span:last-child.activeClass {
+  background-color: #16222A;
+  position: relative;
+  color: #16222A;
+}
+
+.form_wrapper .form_container .form_nav .nav div span:last-child.activeClass::after {
+  position: absolute;
+  content: '✔';
+  color: #fff;
+}
+
+.form_wrapper .form_container .form_body {
+  overflow: hidden;
+}
+
+.form_wrapper .form_container .form_body .form_scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2200px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.form_wrapper .form_container .form_body .form_scroll .basic_info,
+.form_wrapper .form_container .form_body .form_scroll .contact_info,
+.form_wrapper .form_container .form_body .form_scroll .birth_info,
+.form_wrapper .form_container .form_body .form_scroll .submit_info {
+  padding: 0 2em;
+}
+
+.form_wrapper .form_container .form_body .form_scroll .basic_info h3,
+.form_wrapper .form_container .form_body .form_scroll .contact_info h3,
+.form_wrapper .form_container .form_body .form_scroll .birth_info h3,
+.form_wrapper .form_container .form_body .form_scroll .submit_info h3 {
+  padding: 1em 0;
+  color: #292828;
+}
+
+.form_wrapper .form_container .form_body .form_scroll .basic_info form label,
+.form_wrapper .form_container .form_body .form_scroll .contact_info form label,
+.form_wrapper .form_container .form_body .form_scroll .birth_info form label,
+.form_wrapper .form_container .form_body .form_scroll .submit_info form label {
+  font-size: 14px;
+  display: block;
+  padding-bottom: 4px;
+  width: 100%;
+  color: #646262;
+}
+
+.form_wrapper .form_container .form_body .form_scroll .basic_info form input,
+.form_wrapper .form_container .form_body .form_scroll .contact_info form input,
+.form_wrapper .form_container .form_body .form_scroll .birth_info form input,
+.form_wrapper .form_container .form_body .form_scroll .submit_info form input {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #b5bbbb;
+  border-radius: 3px;
+  padding: 10px 10px;
+  color: #646262;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.form_wrapper .form_container .form_body .form_scroll .basic_info form select,
+.form_wrapper .form_container .form_body .form_scroll .contact_info form select,
+.form_wrapper .form_container .form_body .form_scroll .birth_info form select,
+.form_wrapper .form_container .form_body .form_scroll .submit_info form select {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #b5bbbb;
+  border-radius: 3px;
+  padding: 10px 10px;
+  color: #646262;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.form_wrapper .form_container .form_cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em 1.7em 0 1.7em;
+}
+
+.form_wrapper .form_container .form_cta button {
+  border: 1px solid #1f1f1f;
+  background-color: transparent;
+  padding: 8px 10px;
+  border-radius: 3px;
+  background-color: #4a3a68;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.form_wrapper .form_container .form_cta button:first-child {
+  display: none;
+}
+
+.form_wrapper .form_container .form_cta button:last-child {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
